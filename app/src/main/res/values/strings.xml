@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Hilton Room Check</string>
+    <string name="label">Room Check</string>
+    <string name="voiceSearch">Voice Search</string>
+    <string name="search">Search</string>
+</resources>

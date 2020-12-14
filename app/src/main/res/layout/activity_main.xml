@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/voiceSearch"
+        android:layout_width="263dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/voiceSearch"
+        app:backgroundTint="#1F89DA"
+        app:layout_constraintBottom_toTopOf="@+id/mapImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/textSearch"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="512dp"
+        android:text="@string/search"
+        app:backgroundTint="#1F89DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSearchInput" />
+
+    <EditText
+        android:id="@+id/textSearchInput"
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="512dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#000"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textSearch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner"
+        tools:srcCompat="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/buildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textSearch"
+        app:layout_constraintStart_toEndOf="@+id/textSearchInput"
+        app:layout_constraintTop_toBottomOf="@+id/titleImage" />
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="wrap_content"
+        android:layout_height="269dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/og" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
